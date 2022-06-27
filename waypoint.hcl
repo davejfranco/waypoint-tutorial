@@ -13,13 +13,12 @@ app "public-api" {
   }
   
   build {
-    registry {
-      use "docker-pull" {
-        image = "hashicorpdemoapp/public-api"
-        tag   = "v0.0.5"
-        disable_entrypoint = true
-      }
+    use "docker-pull" {
+      image = "hashicorpdemoapp/public-api"
+      tag   = "v0.0.5"
+      disable_entrypoint = true
     }
+    registry {}
   }
 
   deploy {
@@ -47,13 +46,12 @@ app "product-api-db" {
   }
   
   build {
-    registry {
-      use "docker-pull" {
+    use "docker-pull" {
       image = "hashicorpdemoapp/product-api-db"
       tag   = "v0.0.19"
       disable_entrypoint = true
     }
-    }
+    registry {}
   }
 
   deploy {
@@ -79,13 +77,12 @@ app "product-api" {
   }
   
   build {
-    registry {
-      use "docker-pull" {
+    use "docker-pull" {
       image = "hashicorpdemoapp/product-api"
       tag   = "v0.0.19"
       disable_entrypoint = true
     }
-    }
+    registry {}
   }
 
   deploy {
@@ -111,13 +108,12 @@ app "payments" {
   }
   
   build {
-    registry {
-      use "docker-pull" {
+    use "docker-pull" {
       image = "hashicorpdemoapp/payments"
       tag   = "v0.0.12"
       disable_entrypoint = true
     }
-    }
+    registry {}
   }
 
   deploy {
@@ -139,13 +135,12 @@ app "frontend" {
   }
   
   build {
-    registry {
-      use "docker-pull" {
+    use "docker-pull" {
       image = "hashicorpdemoapp/frontend"
       tag   = "v0.0.5"
       disable_entrypoint = true
     }
-    }
+    registry {}
   }
 
   deploy {
