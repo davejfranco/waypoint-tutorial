@@ -11,14 +11,14 @@ app "public-api" {
     // for this app
     auto_hostname = false
   }
-  /*
+  
   build {
     use "docker-pull" {
       image = "hashicorpdemoapp/public-api"
       tag   = "v0.0.5"
       disable_entrypoint = true
     }
-  }*/
+  }
 
   deploy {
     use "helm" {
@@ -43,14 +43,14 @@ app "product-api-db" {
   url {
     auto_hostname = false
   }
-  /*
+  
   build {
     use "docker-pull" {
       image = "hashicorpdemoapp/product-api-db"
       tag   = "v0.0.19"
       disable_entrypoint = true
     }
-  }*/
+  }
 
   deploy {
     use "helm" {
@@ -73,14 +73,14 @@ app "product-api" {
   url {
     auto_hostname = false
   }
-  /*
+  
   build {
     use "docker-pull" {
       image = "hashicorpdemoapp/product-api"
       tag   = "v0.0.19"
       disable_entrypoint = true
     }
-  }*/
+  }
 
   deploy {
     use "helm" {
@@ -103,14 +103,14 @@ app "payments" {
   url {
     auto_hostname = false
   }
-  /*
+  
   build {
     use "docker-pull" {
       image = "hashicorpdemoapp/payments"
       tag   = "v0.0.12"
       disable_entrypoint = true
     }
-  }*/
+  }
 
   deploy {
     use "helm" {
@@ -129,14 +129,14 @@ app "frontend" {
     "service" = "frontend",
     "env"     = "dev"
   }
-  /*
+  
   build {
     use "docker-pull" {
       image = "hashicorpdemoapp/frontend"
       tag   = "v0.0.5"
       disable_entrypoint = true
     }
-  }*/
+  }
 
   deploy {
     use "helm" {
