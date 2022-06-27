@@ -18,7 +18,6 @@ app "public-api" {
       tag   = "v0.0.5"
       disable_entrypoint = true
     }
-    registry {}
   }
 
   deploy {
@@ -51,7 +50,6 @@ app "product-api-db" {
       tag   = "v0.0.19"
       disable_entrypoint = true
     }
-    registry {}
   }
 
   deploy {
@@ -82,7 +80,6 @@ app "product-api" {
       tag   = "v0.0.19"
       disable_entrypoint = true
     }
-    registry {}
   }
 
   deploy {
@@ -113,7 +110,6 @@ app "payments" {
       tag   = "v0.0.12"
       disable_entrypoint = true
     }
-    registry {}
   }
 
   deploy {
@@ -140,7 +136,6 @@ app "frontend" {
       tag   = "v0.0.5"
       disable_entrypoint = true
     }
-    registry {}
   }
 
   deploy {
