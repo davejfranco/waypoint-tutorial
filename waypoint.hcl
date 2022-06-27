@@ -13,10 +13,12 @@ app "public-api" {
   }
   
   build {
-    use "docker-pull" {
-      image = "hashicorpdemoapp/public-api"
-      tag   = "v0.0.5"
-      disable_entrypoint = true
+    registry {
+      use "docker-pull" {
+        image = "hashicorpdemoapp/public-api"
+        tag   = "v0.0.5"
+        disable_entrypoint = true
+      }
     }
   }
 
@@ -45,10 +47,12 @@ app "product-api-db" {
   }
   
   build {
-    use "docker-pull" {
-      image = "hashicorpdemoapp/product-api-db"
-      tag   = "v0.0.19"
-      disable_entrypoint = true
+    registry {
+      use "docker-pull" {
+        image = "hashicorpdemoapp/product-api-db"
+        tag   = "v0.0.19"
+        disable_entrypoint = true
+      }
     }
   }
 
@@ -75,10 +79,12 @@ app "product-api" {
   }
   
   build {
-    use "docker-pull" {
-      image = "hashicorpdemoapp/product-api"
-      tag   = "v0.0.19"
-      disable_entrypoint = true
+    registry {
+      use "docker-pull" {
+        image = "hashicorpdemoapp/product-api"
+        tag   = "v0.0.19"
+        disable_entrypoint = true
+      }
     }
   }
 
@@ -105,10 +111,12 @@ app "payments" {
   }
   
   build {
-    use "docker-pull" {
-      image = "hashicorpdemoapp/payments"
-      tag   = "v0.0.12"
-      disable_entrypoint = true
+    registry {
+      use "docker-pull" {
+        image = "hashicorpdemoapp/payments"
+        tag   = "v0.0.12"
+        disable_entrypoint = true
+      }
     }
   }
 
@@ -131,10 +139,12 @@ app "frontend" {
   }
   
   build {
-    use "docker-pull" {
-      image = "hashicorpdemoapp/frontend"
-      tag   = "v0.0.5"
-      disable_entrypoint = true
+    registry {
+      use "docker-pull" {
+        image = "hashicorpdemoapp/frontend"
+        tag   = "v0.0.5"
+        disable_entrypoint = true
+      }
     }
   }
 
