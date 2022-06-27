@@ -13,6 +13,7 @@ app "public-api" {
   }
   
   build {
+    use "pack" {}
     registry {
       use "docker-pull" {
         image = "hashicorpdemoapp/public-api"
@@ -47,6 +48,7 @@ app "product-api-db" {
   }
   
   build {
+    use "pack" {}
     registry {
       use "docker-pull" {
         image = "hashicorpdemoapp/product-api-db"
@@ -79,6 +81,7 @@ app "product-api" {
   }
   
   build {
+    use "pack" {}
     registry {
       use "docker-pull" {
         image = "hashicorpdemoapp/product-api"
@@ -111,6 +114,7 @@ app "payments" {
   }
   
   build {
+    use "pack" {}
     registry {
       use "docker-pull" {
         image = "hashicorpdemoapp/payments"
@@ -139,6 +143,7 @@ app "frontend" {
   }
   
   build {
+    use "pack" {}
     registry {
       use "docker-pull" {
         image = "hashicorpdemoapp/frontend"
